@@ -1,0 +1,235 @@
+/* Color Palette */
+/* rgba(176,199,228,255) - blue */
+/* rgba(255,255,255,255) - white */
+/* rgba(109,181,102,255) - green */
+/* rgba(235,234,221,255) - khaki */
+/* rgba(156,112,81,255) - brown */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw
+}
+/* all divs default */
+div {
+    padding: 3%;
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+
+    /* width: 100%; taken out to allow other divs to be resized? */
+}
+/* menu div */
+.header {
+    background: rgba(176,199,228,255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+   
+   
+   
+}
+/* controls matt bryant text */
+h1 {
+        font-size: 2em;
+        text-align: center;
+        align-items: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inherit;
+        padding: 0px;
+   
+}
+
+ .title {
+    font-family: 'VT323', monospace;
+}
+
+nav {
+    padding: 2%;
+}
+
+button {
+    background: none;
+    color: black;
+}
+
+.btn {
+    background-color: none;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2rem;
+    border: 0;
+    color: black;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-decoration: none;
+    
+}
+/* div with button group inside to have better control later */
+.button-group {
+    display: flex;
+    justify-content: center;
+    border: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* targeting anchor tags inside .btn class */
+.btn a {
+    color: black;
+    text-align: center;
+    
+    
+}
+/* remove underline */
+.btn a:hover {
+    color: rgba(109,181,102,255);
+    text-decoration: none;
+}
+.btn a:visited {
+    text-decoration: none;
+}
+.btn a:link {
+    text-decoration: none;
+}
+
+/* Form Section */
+.formcontainer {
+    display: flex;
+    background: rgba(156,112,81,255);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80vh;
+    
+}
+
+form {
+    /* text-align: center; */
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    color: white;
+    width: 300px;
+    
+}
+input {
+    text-align: center;
+}
+.formrow {
+    display: flex;
+    justify-content: space-between
+
+}
+.textrow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submit {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(156,112,81,255);
+    padding: 5px 20px;
+    
+}
+
+
+/* footer */
+.footer {
+    background-color: rgba(109,181,102,255);
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    flex-wrap: wrap;
+
+}
+.footerlogo {
+    border: none;
+    
+}
+
+
+.logo {
+   height: 30px;
+   width: 30px;
+   margin: 5px;
+   
+}
+.footertext {
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    font-family: 'VT323', monospace;
+    color: white;
+}
+
+/* Media Queries for Responsiveness  */
+
+@media only screen and (max-width: 320px) {
+    .header {
+      flex-direction: row;
+    }
+   
+  }
+
+@media only screen and (max-width: 394px) {
+    .footertext {
+        font-size: 0.1rem;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+  }
+
+@media only screen and (max-width: 446px) {
+    .header {
+      flex-direction: row;
+    }
+    .footertext {
+        font-size: 0.7rem;
+    }
+  }
+
+  @media only screen and (max-width: 532px) {
+
+    .button-group {
+        flex-direction: column;
+    }
+    .btn {
+        font-size: 1.5rem;
+    }
+
+  }
+  
+  @media only screen and (max-width: 788px) {
+    .hero {
+      flex-wrap: wrap;
+      
+    }
+    .heroimage {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+   
+    
+  }
+  
+  
+
+  
+  
